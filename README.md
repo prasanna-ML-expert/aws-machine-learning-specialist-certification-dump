@@ -188,7 +188,177 @@ D. Hyperparameters in a JSON array as documented for the algorithm used.
 *E. The Amazon EC2 instance class specifying whether training will be run using CPU or GPU.
 *F. The output path specifying where on an Amazon S3 bucket the trained model will persist.
 
+# A Data Scientist is building a linear regression model and will use resulting p-values to evaluate the statistical significance of each coefficient. Upon inspection of the dataset, the Data Scientist discovers that most of the features are normally distributed. The plot of one feature in the dataset is shown in the graphic.
+
+What transformation should the Data Scientist apply to satisfy the statistical assumptions of the linear regression model?
+
+A. Exponential transformation
+*B. Logarithmic transformation
+C. Polynomial transformation
+D. Sinusoidal transformation
+
+# The displayed graph is from a forecasting model for testing a time series.
+
+Considering the graph only, which conclusion should a Machine Learning Specialist make about the behavior of the model?
+
+*A. The model predicts both the trend and the seasonality well
+B. The model predicts the trend well, but not the seasonality.
+C. The model predicts the seasonality well, but not the trend.
+D. The model does not predict the trend or the seasonality well.
+
+# A Machine Learning Specialist is packaging a custom ResNet model into a Docker container so the company can leverage Amazon SageMaker for training. The
+Specialist is using Amazon EC2 P3 instances to train the model and needs to properly configure the Docker container to leverage the NVIDIA GPUs.
+What does the Specialist need to do?
+
+A. Bundle the NVIDIA drivers with the Docker image.
+*B. Build the Docker container to be NVIDIA-Docker compatible.
+C. Organize the Docker container's file structure to execute on GPU instances.
+D. Set the GPU flag in the Amazon SageMaker CreateTrainingJob request body.
+
+# A company is setting up an Amazon SageMaker environment. The corporate data security policy does not allow communication over the internet.
+How can the company enable the Amazon SageMaker service without enabling direct internet access to Amazon SageMaker notebook instances?
+
+A. Create a NAT gateway within the corporate VPC.
+B. Route Amazon SageMaker traffic through an on-premises network.
+*C. Create Amazon SageMaker VPC interface endpoints within the corporate VPC.
+D. Create VPC peering with Amazon VPC hosting Amazon SageMaker.
+
+# A company uses a long short-term memory (LSTM) model to evaluate the risk factors of a particular energy sector. The model reviews multi-page text documents to analyze each sentence of the text and categorize it as either a potential risk or no risk. The model is not performing well, even though the Data Scientist has experimented with many different network structures and tuned the corresponding hyperparameters.
+Which approach will provide the MAXIMUM performance boost?
+
+A. Initialize the words by term frequency-inverse document frequency (TF-IDF) vectors pretrained on a large collection of news articles related to the energy sector.
+B. Use gated recurrent units (GRUs) instead of LSTM and run the training process until the validation loss stops decreasing.
+C. Reduce the learning rate and run the training process until the training loss stops decreasing.
+*D. Initialize the words by word2vec embeddings pretrained on a large collection of news articles related to the energy sector.
+
+# An aircraft engine manufacturing company is measuring 200 performance metrics in a time-series. Engineers want to detect critical manufacturing defects in near- real time during testing. All of the data needs to be stored for offline analysis.
+What approach would be the MOST effective to perform near-real time defect detection?
+
+A. Use AWS IoT Analytics for ingestion, storage, and further analysis. Use Jupyter notebooks from within AWS IoT Analytics to carry out analysis for anomalies.
+B. Use Amazon S3 for ingestion, storage, and further analysis. Use an Amazon EMR cluster to carry out Apache Spark ML k-means clustering to determine anomalies.
+C. Use Amazon S3 for ingestion, storage, and further analysis. Use the Amazon SageMaker Random Cut Forest (RCF) algorithm to determine anomalies.
+*D. Use Amazon Kinesis Data Firehose for ingestion and Amazon Kinesis Data Analytics Random Cut Forest (RCF) to perform anomaly detection. Use Kinesis Data Firehose to store data in Amazon S3 for further analysis.
+
+# A Machine Learning Specialist is planning to create a long-running Amazon EMR cluster. The EMR cluster will have 1 master node, 10 core nodes, and 20 task nodes. To save on costs, the Specialist will use Spot Instances in the EMR cluster.
+Which nodes should the Specialist launch on Spot Instances?
+
+A. Master node
+B. Any of the core nodes
+*C. Any of the task nodes
+D. Both core and task nodes
+
+# A Data Scientist is developing a machine learning model to classify whether a financial transaction is fraudulent. The labeled data available for training consists of
+100,000 non-fraudulent observations and 1,000 fraudulent observations.
+The Data Scientist applies the XGBoost algorithm to the data, resulting in the following confusion matrix when the trained model is applied to a previously unseen validation dataset. The accuracy of the model is 99.1%, but the Data Scientist has been asked to reduce the number of false negatives.
+
+Which combination of steps should the Data Scientist take to reduce the number of false positive predictions by the model? (Choose two.)
+
+A. Change the XGBoost eval_metric parameter to optimize based on rmse instead of error.
+*B. Increase the XGBoost scale_pos_weight parameter to adjust the balance of positive and negative weights.
+C. Increase the XGBoost max_depth parameter because the model is currently underfitting the data.
+*D. Change the XGBoost eval_metric parameter to optimize based on AUC instead of error.
+E. Decrease the XGBoost max_depth parameter because the model is currently overfitting the data.
+
+# A Machine Learning Specialist prepared the following graph displaying the results of k-means for k = [1..10]:
+
+Considering the graph, what is a reasonable selection for the optimal choice of k?
+
+A. 1
+*B. 4
+C. 7
+D. 10
+
+# A Marketing Manager at a pet insurance company plans to launch a targeted marketing campaign on social media to acquire new customers. Currently, the company has the following data in Amazon Aurora:
+✑ Profiles for all past and existing customers
+✑ Profiles for all past and existing insured pets
+✑ Policy-level information
+✑ Premiums received
+✑ Claims paid
+What steps should be taken to implement a machine learning model to identify potential new customers on social media?
+
+A. Use regression on customer profile data to understand key characteristics of consumer segments. Find similar profiles on social media
+*B. Use clustering on customer profile data to understand key characteristics of consumer segments. Find similar profiles on social media
+C. Use a recommendation engine on customer profile data to understand key characteristics of consumer segments. Find similar profiles on social media.
+D. Use a decision tree classifier engine on customer profile data to understand key characteristics of consumer segments. Find similar profiles on social media.
+
+# A medical imaging company wants to train a computer vision model to detect areas of concern on patients' CT scans. The company has a large collection of unlabeled CT scans that are linked to each patient and stored in an Amazon S3 bucket. The scans must be accessible to authorized users only. A machine learning engineer needs to build a labeling pipeline.
+Which set of steps should the engineer take to build the labeling pipeline with the LEAST effort?
+
+A. Create a workforce with AWS Identity and Access Management (IAM). Build a labeling tool on Amazon EC2 Queue images for labeling by using Amazon Simple Queue Service (Amazon SQS). Write the labeling instructions.
+B. Create an Amazon Mechanical Turk workforce and manifest file. Create a labeling job by using the built-in image classification task type in Amazon SageMaker Ground Truth. Write the labeling instructions.
+*C. Create a private workforce and manifest file. Create a labeling job by using the built-in bounding box task type in Amazon SageMaker Ground Truth. Write the labeling instructions.
+D. Create a workforce with Amazon Cognito. Build a labeling web application with AWS Amplify. Build a labeling workflow backend using AWS Lambda. Write the labeling instructions.
+
+# A machine learning specialist is developing a proof of concept for government users whose primary concern is security. The specialist is using Amazon
+SageMaker to train a convolutional neural network (CNN) model for a photo classifier application. The specialist wants to protect the data so that it cannot be accessed and transferred to a remote host by malicious code accidentally installed on the training container.
+Which action will provide the MOST secure protection?
+
+A. Remove Amazon S3 access permissions from the SageMaker execution role.
+B. Encrypt the weights of the CNN model.
+C. Encrypt the training and validation dataset.
+*D. Enable network isolation for training jobs.
+
+# A company wants to classify user behavior as either fraudulent or normal. Based on internal research, a Machine Learning Specialist would like to build a binary classifier based on two features: age of account and transaction month. The class distribution for these features is illustrated in the figure provided.
+[9.jpg]
+Based on this information, which model would have the HIGHEST recall with respect to the fraudulent class?
+
+A. Decision tree
+B. Linear support vector machine (SVM)
+*C. Naive Bayesian classifier
+D. Single Perceptron with sigmoidal activation function
+
+# A Machine Learning Specialist has completed a proof of concept for a company using a small data sample, and now the Specialist is ready to implement an end- to-end solution in AWS using Amazon SageMaker. The historical training data is stored in Amazon RDS.
+Which approach should the Specialist use for training a model using that data?
+
+A. Write a direct connection to the SQL database within the notebook and pull data in
+*B. Push the data from Microsoft SQL Server to Amazon S3 using an AWS Data Pipeline and provide the S3 location within the notebook.
+C. Move the data to Amazon DynamoDB and set up a connection to DynamoDB within the notebook to pull data in.
+D. Move the data to Amazon ElastiCache using AWS DMS and set up a connection within the notebook to pull data in for fast access.
+
+# A manufacturing company has structured and unstructured data stored in an Amazon S3 bucket. A Machine Learning Specialist wants to use SQL to run queries on this data.
+Which solution requires the LEAST effort to be able to query this data?
+
+A. Use AWS Data Pipeline to transform the data and Amazon RDS to run queries.
+*B. Use AWS Glue to catalogue the data and Amazon Athena to run queries.
+C. Use AWS Batch to run ETL on the data and Amazon Aurora to run the queries.
+D. Use AWS Lambda to transform the data and Amazon Kinesis Data Analytics to run queries.
+
+# A large mobile network operating company is building a machine learning model to predict customers who are likely to unsubscribe from the service. The company plans to offer an incentive for these customers as the cost of churn is far greater than the cost of the incentive.
+The model produces the following confusion matrix after evaluating on a test dataset of 100 customers:
+
+Based on the model evaluation results, why is this a viable model for production?
+
+A. The model is 86% accurate and the cost incurred by the company as a result of false negatives is less than the false positives.
+B. The precision of the model is 86%, which is less than the accuracy of the model.
+*C. The model is 86% accurate and the cost incurred by the company as a result of false positives is less than the false negatives.
+D. The precision of the model is 86%, which is greater than the accuracy of the model.
+
+# A health care company is planning to use neural networks to classify their X-ray images into normal and abnormal classes. The labeled data is divided into a training set of 1,000 images and a test set of 200 images. The initial training of a neural network model with 50 hidden layers yielded 99% accuracy on the training set, but only 55% accuracy on the test set.
+What changes should the Specialist consider to solve this issue? (Choose three.)
+
+A. Choose a higher number of layers
+*B. Choose a lower number of layers
+C. Choose a smaller learning rate
+*D. Enable dropout
+E. Include all the images from the test set in the training set
+*F. Enable early stopping
+
+# A Machine Learning Specialist is developing a daily ETL workflow containing multiple ETL jobs. The workflow consists of the following processes: "¢ Start the workflow as soon as data is uploaded to Amazon S3. "¢ When all the datasets are available in Amazon S3, start an ETL job to join the uploaded datasets with multiple terabyte-sized datasets already stored in Amazon
+S3.
+"¢ Store the results of joining datasets in Amazon S3.
+"¢ If one of the jobs fails, send a notification to the Administrator.
+Which configuration will meet these requirements?
+
+*A. Use AWS Lambda to trigger an AWS Step Functions workflow to wait for dataset uploads to complete in Amazon S3. Use AWS Glue to join the datasets. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.
+B. Develop the ETL workflow using AWS Lambda to start an Amazon SageMaker notebook instance. Use a lifecycle configuration script to join the datasets and persist the results in Amazon S3. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.
+C. Develop the ETL workflow using AWS Batch to trigger the start of ETL jobs when data is uploaded to Amazon S3. Use AWS Glue to join the datasets in Amazon S3. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.
+D. Use AWS Lambda to chain other Lambda functions to read and join the datasets in Amazon S3 as soon as the data is uploaded to Amazon S3. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.
+
 # 
+
+
+
+
 
 
 
