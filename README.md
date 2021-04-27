@@ -354,10 +354,169 @@ B. Develop the ETL workflow using AWS Lambda to start an Amazon SageMaker notebo
 C. Develop the ETL workflow using AWS Batch to trigger the start of ETL jobs when data is uploaded to Amazon S3. Use AWS Glue to join the datasets in Amazon S3. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.
 D. Use AWS Lambda to chain other Lambda functions to read and join the datasets in Amazon S3 as soon as the data is uploaded to Amazon S3. Use an Amazon CloudWatch alarm to send an SNS notification to the Administrator in the case of a failure.
 
+# A machine learning specialist is running an Amazon SageMaker endpoint using the built-in object detection algorithm on a P3 instance for real-time predictions in a company's production application. When evaluating the model's resource utilization, the specialist notices that the model is using only a fraction of the GPU.
+Which architecture changes would ensure that provisioned resources are being utilized effectively?
+
+A. Redeploy the model as a batch transform job on an M5 instance.
+*B. Redeploy the model on an M5 instance. Attach Amazon Elastic Inference to the instance.
+C. Redeploy the model on a P3dn instance.
+D. Deploy the model onto an Amazon Elastic Container Service (Amazon ECS) cluster using a P3 instance.
+
+# A logistics company needs a forecast model to predict next month's inventory requirements for a single item in 10 warehouses. A machine learning specialist uses
+Amazon Forecast to develop a forecast model from 3 years of monthly data. There is no missing data. The specialist selects the DeepAR+ algorithm to train a predictor. The predictor means absolute percentage error (MAPE) is much larger than the MAPE produced by the current human forecasters.
+Which changes to the CreatePredictor API call could improve the MAPE? (Choose two.)
+
+*A. Set PerformAutoML to true.
+B. Set ForecastHorizon to 4.
+C. Set ForecastFrequency to W for weekly.
+*D. Set PerformHPO to true.
+E. Set FeaturizationMethodName to filling.
+
+# A manufacturer is operating a large number of factories with a complex supply chain relationship where unexpected downtime of a machine can cause production to stop at several factories. A data scientist wants to analyze sensor data from the factories to identify equipment in need of preemptive maintenance and then dispatch a service team to prevent unplanned downtime. The sensor readings from a single machine can include up to 200 data points including temperatures, voltages, vibrations, RPMs, and pressure readings.
+To collect this sensor data, the manufacturer deployed Wi-Fi and LANs across the factories. Even though many factory locations do not have reliable or high- speed internet connectivity, the manufacturer would like to maintain near-real-time inference capabilities.
+Which deployment architecture for the model will address these business requirements?
+
+A. Deploy the model in Amazon SageMaker. Run sensor data through this model to predict which machines need maintenance.
+*B. Deploy the model on AWS IoT Greengrass in each factory. Run sensor data through this model to infer which machines need maintenance.
+C. Deploy the model to an Amazon SageMaker batch transformation job. Generate inferences in a daily batch report to identify machines that need maintenance.
+D. Deploy the model in Amazon SageMaker and use an IoT rule to write data to an Amazon DynamoDB table. Consume a DynamoDB stream from the table with an AWS Lambda function to invoke the endpoint.
+
+# A Machine Learning Specialist is deciding between building a naive Bayesian model or a full Bayesian network for a classification problem. The Specialist computes the Pearson correlation coefficients between each feature and finds that their absolute values range between 0.1 to 0.95.
+Which model describes the underlying data in this situation?
+
+A. A naive Bayesian model, since the features are all conditionally independent.
+B. A full Bayesian network, since the features are all conditionally independent.
+C. A naive Bayesian model, since some of the features are statistically dependent.
+*D. A full Bayesian network, since some of the features are statistically dependent.
+
+# A Data Scientist is developing a binary classifier to predict whether a patient has a particular disease on a series of test results. The Data Scientist has data on
+400 patients randomly selected from the population. The disease is seen in 3% of the population.
+Which cross-validation strategy should the Data Scientist adopt?
+
+A. A k-fold cross-validation strategy with k=5
+*B. A stratified k-fold cross-validation strategy with k=5
+C. A k-fold cross-validation strategy with k=5 and 3 repeats
+D. An 80/20 stratified split between training and validation
+
+# A company uses camera images of the tops of items displayed on store shelves to determine which items were removed and which ones still remain. After several hours of data labeling, the company has a total of 1,000 hand-labeled images covering 10 distinct items. The training results were poor.
+Which machine learning approach fulfills the company's long-term needs?
+
+A. Convert the images to grayscale and retrain the model
+B. Reduce the number of distinct items from 10 to 2, build the model, and iterate
+C. Attach different colored labels to each item, take the images again, and build the model
+*D. Augment training data for each item using image variants like inversions and translations, build the model, and iterate.
+
+# A Machine Learning Specialist is attempting to build a linear regression model.
+[11.jpg]
+Given the displayed residual plot only, what is the MOST likely problem with the model?
+
+*A. Linear regression is inappropriate. The residuals do not have constant variance.
+B. Linear regression is inappropriate. The underlying data has outliers.
+C. Linear regression is appropriate. The residuals have a zero mean.
+D. Linear regression is appropriate. The residuals have constant variance.
+
+# This graph shows the training and validation loss against the epochs for a neural network.
+The network being trained is as follows:
+✑ Two dense layers, one output neuron
+✑ 100 neurons in each layer
+✑ 100 epochs
+Random initialization of weights
+
+
+Which technique can be used to improve model performance in terms of accuracy in the validation set?
+
+*A. Early stopping
+B. Random initialization of weights with appropriate seed
+C. Increasing the number of epochs
+D. Adding another layer with the 100 neurons
+
+# A company wants to predict the sale prices of houses based on available historical sales data. The target variable in the company's dataset is the sale price. The features include parameters such as the lot size, living area measurements, non-living area measurements, number of bedrooms, number of bathrooms, year built, and postal code. The company wants to use multi-variable linear regression to predict house sale prices.
+Which step should a machine learning specialist take to remove features that are irrelevant for the analysis and reduce the model's complexity?
+
+A. Plot a histogram of the features and compute their standard deviation. Remove features with high variance.
+*B. Plot a histogram of the features and compute their standard deviation. Remove features with low variance.
+C. Build a heatmap showing the correlation of the dataset against itself. Remove features with low mutual correlation scores.
+D. Run a correlation check of all features against the target variable. Remove features with low target variable correlation scores.
+
+# A manufacturer of car engines collects data from cars as they are being driven. The data collected includes timestamp, engine temperature, rotations per minute
+(RPM), and other sensor readings. The company wants to predict when an engine is going to have a problem, so it can notify drivers in advance to get engine maintenance. The engine data is loaded into a data lake for training.
+Which is the MOST suitable predictive model that can be deployed into production?
+
+*A. Add labels over time to indicate which engine faults occur at what time in the future to turn this into a supervised learning problem. Use a recurrent neural network (RNN) to train the model to recognize when an engine might need maintenance for a certain fault.
+B. This data requires an unsupervised learning algorithm. Use Amazon SageMaker k-means to cluster the data.
+C. Add labels over time to indicate which engine faults occur at what time in the future to turn this into a supervised learning problem. Use a convolutional neural network (CNN) to train the model to recognize when an engine might need maintenance for a certain fault.
+D. This data is already formulated as a time series. Use Amazon SageMaker seq2seq to model the time series.
+
+# A web-based company wants to improve its conversion rate on its landing page. Using a large historical dataset of customer visits, the company has repeatedly trained a multi-class deep learning network algorithm on Amazon SageMaker. However, there is an overfitting problem: training data shows 90% accuracy in predictions, while test data shows 70% accuracy only.
+The company needs to boost the generalization of its model before deploying it into production to maximize conversions of visits to purchases.
+Which action is recommended to provide the HIGHEST accuracy model for the company's test and validation data?
+
+A. Increase the randomization of training data in the mini-batches used in training
+B. Allocate a higher proportion of the overall data to the training dataset
+*C. Apply L1 or L2 regularization and dropouts to the training
+D. Reduce the number of layers and units (or neurons) from the deep learning network
+
+# A credit card company wants to build a credit scoring model to help predict whether a new credit card applicant will default on a credit card payment. The company has collected data from a large number of sources with thousands of raw attributes. Early experiments to train a classification model revealed that many attributes are highly correlated, the large number of features slows down the training speed significantly, and that there are some overfitting issues.
+The Data Scientist on this project would like to speed up the model training time without losing a lot of information from the original dataset.
+Which feature engineering technique should the Data Scientist use to meet the objectives?
+
+A. Run self-correlation on all features and remove highly correlated features
+B. Normalize all numerical values to be between 0 and 1
+*C. Use an autoencoder or principal component analysis (PCA) to replace original features with new features
+D. Cluster raw data using k-means and use sample data from each cluster to build a new dataset
+
+# A trucking company is collecting live image data from its fleet of trucks across the globe. The data is growing rapidly and approximately 100 GB of new data is generated every day. The company wants to explore machine learning uses cases while ensuring the data is only accessible to specific IAM users.
+Which storage option provides the most processing flexibility and will allow access control with IAM?
+
+A. Use a database, such as Amazon DynamoDB, to store the images, and set the IAM policies to restrict access to only the desired IAM users.
+*B. Use an Amazon S3-backed data lake to store the raw images, and set up the permissions using bucket policies.
+C. Setup up Amazon EMR with Hadoop Distributed File System (HDFS) to store the files, and restrict access to the EMR instances using IAM policies.
+D. Configure Amazon EFS with IAM policies to make the data available to Amazon EC2 instances owned by the IAM users.
+
+# A Machine Learning Specialist needs to move and transform data in preparation for training. Some of the data needs to be processed in near-real time, and other data can be moved hourly. There are existing Amazon EMR MapReduce jobs to clean and feature engineering to perform on the data.
+Which of the following services can feed data to the MapReduce jobs? (Choose two.)
+
+A. AWS DMS
+*B. Amazon Kinesis
+*C. AWS Data Pipeline
+D. Amazon Athena
+E. Amazon ES
+ 
+# A Machine Learning Specialist must build out a process to query a dataset on Amazon S3 using Amazon Athena. The dataset contains more than 800,000 records stored as plaintext CSV files. Each record contains 200 columns and is approximately 1.5 MB in size. Most queries will span 5 to 10 columns only.
+How should the Machine Learning Specialist transform the dataset to minimize query runtime?
+
+*A. Convert the records to Apache Parquet format.
+B. Convert the records to JSON format.
+C. Convert the records to GZIP CSV format.
+D. Convert the records to XML format. 
+
+# A Data Scientist received a set of insurance records, each consisting of a record ID, the final outcome among 200 categories, and the date of the final outcome.
+Some partial information on claim contents is also provided, but only for a few of the 200 categories. For each outcome category, there are hundreds of records distributed over the past 3 years. The Data Scientist wants to predict how many claims to expect in each category from month to month, a few months in advance.
+What type of machine learning model should be used?
+
+A. Classification month-to-month using supervised learning of the 200 categories based on claim contents.
+B. Reinforcement learning using claim IDs and timestamps where the agent will identify how many claims in each category to expect from month to month.
+*C. Forecasting using claim IDs and timestamps to identify how many claims in each category to expect from month to month.
+D. Classification with supervised learning of the categories for which partial information on claim contents is provided, and forecasting using claim IDs and timestamps for all other categories.
+
+# A Machine Learning team uses Amazon SageMaker to train an Apache MXNet handwritten digit classifier model using a research dataset. The team wants to receive a notification when the model is overfitting. Auditors want to view the Amazon SageMaker log activity report to ensure there are no unauthorized API calls.
+What should the Machine Learning team do to address the requirements with the least amount of code and fewest steps?
+
+A. Implement an AWS Lambda function to log Amazon SageMaker API calls to Amazon S3. Add code to push a custom metric to Amazon CloudWatch. Create an alarm in CloudWatch with Amazon SNS to receive a notification when the model is overfitting.
+*B. Use AWS CloudTrail to log Amazon SageMaker API calls to Amazon S3. Add code to push a custom metric to Amazon CloudWatch. Create an alarm in CloudWatch with Amazon SNS to receive a notification when the model is overfitting.
+C. Implement an AWS Lambda function to log Amazon SageMaker API calls to AWS CloudTrail. Add code to push a custom metric to Amazon CloudWatch. Create an alarm in CloudWatch with Amazon SNS to receive a notification when the model is overfitting.
+D. Use AWS CloudTrail to log Amazon SageMaker API calls to Amazon S3. Set up Amazon SNS to receive a notification when the model is overfitting
+
+# A Data Science team is designing a dataset repository where it will store a large amount of training data commonly used in its machine learning models. As Data
+Scientists may create an arbitrary number of new datasets every day, the solution has to scale automatically and be cost-effective. Also, it must be possible to explore the data using SQL.
+Which storage scheme is MOST adapted to this scenario?
+
+*A. Store datasets as files in Amazon S3.
+B. Store datasets as files in an Amazon EBS volume attached to an Amazon EC2 instance.
+C. Store datasets as tables in a multi-node Amazon Redshift cluster.
+D. Store datasets as global tables in Amazon DynamoDB.
+
 # 
-
-
-
 
 
 
