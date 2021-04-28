@@ -1,6 +1,6 @@
 # 130 Questions dump.
 
-### A Machine Learning Specialist needs to be able to ingest streaming data and store it in Apache Parquet files for exploration and analysis.
+### 1.A Machine Learning Specialist needs to be able to ingest streaming data and store it in Apache Parquet files for exploration and analysis.
 Which of the following services would both ingest and store this data in the correct format?
 
 A. AWS DMS
@@ -11,7 +11,7 @@ B. Amazon Kinesis Data Streams
 
 D. Amazon Kinesis Data Analytics
 
-### A Machine Learning Specialist is required to build a supervised image-recognition model to identify a cat. The ML Specialist performs some tests and records the following results for a neural network-based image classifier:
+### 2.A Machine Learning Specialist is required to build a supervised image-recognition model to identify a cat. The ML Specialist performs some tests and records the following results for a neural network-based image classifier:
 Total number of images available = 1,000
 Test set images = 100 (constant test set)
 The ML Specialist notices that, in over 75% of the misclassified images, the cats were held upside down by their owners.
@@ -26,8 +26,8 @@ C. Increase the number of layers for the neural network.
 D. Increase the dropout rate for the second-to-last layer.
 
 
-### Machine Learning Specialist is working with a media company to perform classification on popular articles from the company's website. The company is using random forests to classify how popular an article will be before it is published. A sample of the data being used is below.
-
+### 3.Machine Learning Specialist is working with a media company to perform classification on popular articles from the company's website. The company is using random forests to classify how popular an article will be before it is published. A sample of the data being used is below.
+![Alt text](1.png?raw=true "AWS machine Learning dump")
 
 Given the dataset, the Specialist wants to convert the Day_Of_Week column to binary values.
 What technique should be used to convert this column to binary values?
@@ -40,8 +40,8 @@ C. Tokenization
 
 D. Normalization transformation
 
-### A company wants to classify user behavior as either fraudulent or normal. Based on internal research, a Machine Learning Specialist would like to build a binary classifier based on two features: age of account and transaction month. The class distribution for these features is illustrated in the figure provided.
-
+### 4.A company wants to classify user behavior as either fraudulent or normal. Based on internal research, a Machine Learning Specialist would like to build a binary classifier based on two features: age of account and transaction month. The class distribution for these features is illustrated in the figure provided.
+![Alt text](2.jpg?raw=true "AWS machine Learning questions dump")
 Based on this information, which model would have the HIGHEST accuracy?
 
 A. Long short-term memory (LSTM) model with scaled exponential linear unit (SELU)
@@ -52,7 +52,7 @@ B. Logistic regression
 
 D. Single perceptron with tanh activation function
 
-### A Machine Learning Specialist built an image classification deep learning model. However, the Specialist ran into an overfitting problem in which the training and testing accuracies were 99% and 75%, respectively.
+### 5.A Machine Learning Specialist built an image classification deep learning model. However, the Specialist ran into an overfitting problem in which the training and testing accuracies were 99% and 75%, respectively.
 How should the Specialist address this issue and what is the reason behind it?
 
 A. The learning rate should be increased because the optimization process was trapped at a local minimum.
@@ -64,7 +64,7 @@ C. The dimensionality of dense layer next to the flatten layer should be increas
 D. The epoch number should be increased because the optimization process was terminated before it reached the global minimum.
 
 
-### A Machine Learning Specialist is given a structured dataset on the shopping habits of a company's customer base. The dataset contains thousands of columns of data and hundreds of numerical columns for each customer. The Specialist wants to identify whether there are natural groupings for these columns across all customers and visualize the results as quickly as possible.
+### 6.A Machine Learning Specialist is given a structured dataset on the shopping habits of a company's customer base. The dataset contains thousands of columns of data and hundreds of numerical columns for each customer. The Specialist wants to identify whether there are natural groupings for these columns across all customers and visualize the results as quickly as possible.
 What approach should the Specialist take to accomplish these tasks?
 
 *A. Embed the numerical features using the t-distributed stochastic neighbor embedding (t-SNE) algorithm and create a scatter plot.
