@@ -1250,7 +1250,7 @@ B. Use AWS Glue to compress the data into the Apache Parquet format.
 D. Use the SageMaker hyperparameter optimization feature to automatically optimize the data.
 
 ### Machine Learning Specialist is working with a media company to perform classification on popular articles from the company's website. The company is using random forests to classify how popular an article will be before it is published. A sample of the data being used is below.
-[18.png]
+![Alt text](18.png?raw=true "AWS machine Learning questions")
 Given the dataset, the Specialist wants to convert the Day_Of_Week column to binary values.
 What technique should be used to convert this column to binary values?
 
