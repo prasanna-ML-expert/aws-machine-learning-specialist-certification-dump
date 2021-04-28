@@ -99,8 +99,7 @@ B. Use CMD config in the Dockerfile to add the training program as a CMD of the 
 
 D. Copy the training program to directory /opt/ml/train
 
-### Given the following confusion matrix for a movie classification model, what is the true class frequency for Romance and the predicted class frequency for
-Adventure?
+### Given the following confusion matrix for a movie classification model, what is the true class frequency for Romance and the predicted class frequency for Adventure?
 
 
 A. The true class frequency for Romance is 77.56% and the predicted class frequency for Adventure is 20.85%
@@ -162,8 +161,7 @@ C. Output speech marks to guide in pronunciation.
 
 D. Use Amazon Lex to preprocess the text files for pronunciation
 
-### Machine Learning Specialist is building a model to predict future employment rates based on a wide range of economic factors. While exploring the data, the
-Specialist notices that the magnitude of the input features vary greatly. The Specialist does not want variables with a larger magnitude to dominate the model.
+### Machine Learning Specialist is building a model to predict future employment rates based on a wide range of economic factors. While exploring the data, the Specialist notices that the magnitude of the input features vary greatly. The Specialist does not want variables with a larger magnitude to dominate the model.
 What should the Specialist do to prepare the data for model training?
 
 A. Apply quantile binning to group the data into categorical bins to keep any relationships in the data by replacing the magnitude with distribution.
@@ -224,6 +222,7 @@ terabyte-sized datasets already stored in Amazon S3.
 • Store the results of joining datasets in Amazon S3.
 • If one of the jobs fails, send a notification to the Administrator.
 Which configuration will meet these requirements?
+
 *A. Use AWS Lambda to trigger an AWS Step Functions workflow to wait for dataset uploads to complete in
 Amazon S3. Use AWS Glue to join the datasets. Use an Amazon CloudWatch alarm to send an SNS
 notification to the Administrator in the case of a failure.
@@ -402,7 +401,7 @@ C. Encrypt the training and validation dataset.
 *D. Enable network isolation for training jobs.
 
 ### A company wants to classify user behavior as either fraudulent or normal. Based on internal research, a Machine Learning Specialist would like to build a binary classifier based on two features: age of account and transaction month. The class distribution for these features is illustrated in the figure provided.
-[9.jpg]
+![Alt text](9.jpg?raw=true "AWS machine Learning specialist")
 Based on this information, which model would have the HIGHEST recall with respect to the fraudulent class?
 
 A. Decision tree
@@ -549,7 +548,7 @@ C. Attach different colored labels to each item, take the images again, and buil
 *D. Augment training data for each item using image variants like inversions and translations, build the model, and iterate.
 
 ### A Machine Learning Specialist is attempting to build a linear regression model.
-[11.jpg]
+![Alt text](11.jpg?raw=true "Amazon cloud machine Learning certification")
 Given the displayed residual plot only, what is the MOST likely problem with the model?
 
 *A. Linear regression is inappropriate. The residuals do not have constant variance.
@@ -730,7 +729,7 @@ C. Install AWS DeepLens cameras and use the DeepLens_Kinesis_Video module to str
 D. Install AWS DeepLens cameras and use the DeepLens_Kinesis_Video module to stream video to Amazon Kinesis Video Streams for each camera. On each stream, run an AWS Lambda function to capture image fragments and then call Amazon Rekognition Image to detect faces from a collection of known employees, and alert when non-employees are detected.
 
 ### A data scientist wants to use Amazon Forecast to build a forecasting model for inventory demand for a retail company. The company has provided a dataset of historic inventory demand for its products as a .csv file stored in an Amazon S3 bucket. The table below shows a sample of the dataset.
-[13.jpg]
+![Alt text](13.jpg?raw=true "Amazon machine Learning specialist questions")
 How should the data scientist transform the data?
 
 *A. Use ETL jobs in AWS Glue to separate the dataset into a target time series dataset and an item metadata dataset. Upload both datasets as .csv files to Amazon S3.
@@ -1018,7 +1017,7 @@ B. Include a copy of the samples in the test dataset in the training dataset.
 E. Change the cost function so that false positives have a higher impact on the cost value than false negatives.
 
 ### A company wants to classify user behavior as either fraudulent or normal. Based on internal research, a Machine Learning Specialist would like to build a binary classifier based on two features: age of account and transaction month. The class distribution for these features is illustrated in the figure provided.
-[15.jpg]
+![Alt text](15.jpg?raw=true "AWS cloud machine Learning questions")
 Based on this information, which model would have the HIGHEST recall with respect to the fraudulent class?
 
 *A. Decision tree
@@ -1086,7 +1085,7 @@ C. Use an Amazon SageMaker launch configuration to encrypt the data once it is c
 
 ### A large mobile network operating company is building a machine learning model to predict customers who are likely to unsubscribe from the service. The company plans to offer an incentive for these customers as the cost of churn is far greater than the cost of the incentive.
 The model produces the following confusion matrix after evaluating on a test dataset of 100 customers:
-[16.png]
+![Alt text](16.png?raw=true "AWS questions machine Learning specialist")
 Based on the model evaluation results, why is this a viable model for production?
 
 A. The model is 86% accurate and the cost incurred by the company as a result of false negatives is less than the false positives.
@@ -1098,7 +1097,7 @@ B. The precision of the model is 86%, which is less than the accuracy of the mod
 D. The precision of the model is 86%, which is greater than the accuracy of the model.
 
 ### A company wants to classify user behavior as either fraudulent or normal. Based on internal research, a Machine Learning Specialist would like to build a binary classifier based on two features: age of account and transaction month. The class distribution for these features is illustrated in the figure provided.
-[17.jpg]
+![Alt text](17.jpg?raw=true "AWS machine Learning certification")
 Based on this information, which model would have the HIGHEST accuracy?
 
 A. Long short-term memory (LSTM) model with scaled exponential linear unit (SELU)
